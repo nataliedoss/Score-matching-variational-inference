@@ -1,8 +1,8 @@
 # Score-matching-variational-inference
 
-This is a Python3 implementation of the Score matching for variational inference algorithm described in <a href="sm_vi.pdf" download>Nonparametric variational inference via score matching</a>. 
+This is a Python3 implementation of the Score matching for variational inference algorithm described in <a href="sm_vi.pdf" download>Nonparametric variational inference via score matching</a>. A sample script to test the algorithm is below.
 
-A sample script to test the algorithm is below.
+Also included is a Jupyter notebook, [Variational EM via score matching](https://github.com/nataliedoss/Score-matching-variational-inference/blob/master/vae_sm.ipynb), implementing an alternative version of the algorithm using the Fisher divergence over $E_q$ instead of $E_p$. This notebook imitates the variational autoencder of [Kingma and Welling (2013)](https://arxiv.org/abs/1312.6114), but instead of performing amortized mean-field variational inference via minimizing a KL divergence, we perform variational inference by minimizing a Fisher divergence.
 
 ## External dependencies
 
