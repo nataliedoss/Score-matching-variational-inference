@@ -8,6 +8,8 @@ Also included is a Jupyter notebook, [Variational EM via score matching](https:/
 
 Also included is a Jupyter notebook, [Variational EM via ratio matching](https://github.com/nataliedoss/Score-matching-variational-inference/blob/master/vae_rm.ipynb), implementing the algorithm described in Section 2.2 of <a href="sm_vi.pdf" download>Nonparametric variational inference via score matching</a>. Again, this algorithm imitates the variational autoencoder, but performs variational inference via ratio matching. 
 
+For the Python package, below are the external dependencies and a sample script.
+
 ## External dependencies
 
 [Numpy](http://numpy.org/)
