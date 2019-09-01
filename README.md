@@ -1,14 +1,6 @@
 # Score-matching-variational-inference
 
-This is a Python3 implementation of the algorithm described in Section 1 of <a href="sm_vi.pdf" download>Nonparametric variational inference via score matching</a>. A sample script to test the algorithm is below.
-
-For more details on variational inference, see the summary sheet <a href="vi.pdf" download>Variational Inference</a>.
-
-Also included is a Jupyter notebook, [Variational EM via score matching](https://github.com/nataliedoss/Score-matching-variational-inference/blob/master/vae_sm.ipynb), implementing the algorithm described in Section 2.1 of <a href="sm_vi.pdf" download>Nonparametric variational inference via score matching</a>. This algorithm imitates the variational autoencoder of [Kingma and Welling (2013)](https://arxiv.org/abs/1312.6114), but instead of performing variational inference via minimizing a KL divergence, it performs variational inference by minimizing a Fisher divergence.
-
-Also included is a Jupyter notebook, [Variational EM via ratio matching](https://github.com/nataliedoss/Score-matching-variational-inference/blob/master/vae_rm.ipynb), implementing the algorithm described in Section 2.2 of <a href="sm_vi.pdf" download>Nonparametric variational inference via score matching</a>. Again, this algorithm imitates the variational autoencoder, but performs variational inference via ratio matching. 
-
-For the Python package, below are the external dependencies and a sample script.
+This is a Python3 implementation of the algorithm described in Section 1 of <a href="sm_vi.pdf" download>Nonparametric variational inference via score matching</a>. A sample script to test the algorithm is below. For more details on variational inference, see the summary sheet <a href="vi.pdf" download>Variational Inference</a>.
 
 ## External dependencies
 
@@ -41,3 +33,9 @@ plt.legend(loc = "lower right")
 plt.suptitle("Log posterior estimates: Gaussian likelihood and Gaussian mixture prior on means")
 plt.show()
 ```
+
+
+Also included is a Jupyter notebook, [Variational EM via score matching](https://github.com/nataliedoss/Score-matching-variational-inference/blob/master/vae_sm.ipynb), implementing the algorithm described in Section 2.1 of <a href="sm_vi.pdf" download>Nonparametric variational inference via score matching</a>. This algorithm imitates the variational autoencoder of [Kingma and Welling (2013)](https://arxiv.org/abs/1312.6114), but instead of performing variational inference via minimizing a KL divergence, it performs variational inference by minimizing a Fisher divergence.
+
+Also included is a Jupyter notebook, [Variational EM via ratio matching](https://github.com/nataliedoss/Score-matching-variational-inference/blob/master/vae_rm.ipynb), implementing the algorithm described in Section 2.2 of <a href="sm_vi.pdf" download>Nonparametric variational inference via score matching</a>. Again, this algorithm imitates the variational autoencoder, but performs variational inference via ratio matching. 
+
