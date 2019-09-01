@@ -1,5 +1,6 @@
-#################################################################################
-# Class score matching algorithms
+"""
+module for nonparametric score matching posterior inference
+"""
 
 import numpy as np
 import random
@@ -11,9 +12,13 @@ from scipy.interpolate import BSpline
 from lhood import *
 
 
-# Class for score-matching spline estimate 
+#################################################################################
 
 class sm_spline():
+    '''
+    class for score-matching estimation for exponential family using splines 
+    '''
+    
     def __init__(self, theta_grid, post, knots, degree):
         self.theta_grid = theta_grid
         self.post = post
@@ -31,6 +36,12 @@ class sm_spline():
 
         
     def estimate_unbdd(self):
+        '''
+        Method to estimate sufficient statistic for density on unbounded domain.
+
+        Returns:
+        Array(float, 1 x N). log of density estimate.
+        '''
         
         for i in range(self.K):
             coeff_col = BSpline(self.knots, self.coeffs[i, ], self.degree)
@@ -45,12 +56,11 @@ class sm_spline():
 
         gamma_hat = np.matmul(np.linalg.inv(self.A_bar), - self.k2_bar)
 
-        # compute the solution
         g_est = np.empty(shape = (self.N, ))
         for i in range(self.N):
             g_est[i] = np.matmul(gamma_hat.T, self.bsMat[i, ])
 
-        # Might as well spit out the normalized version
+
         return normalize_log(g_est - np.max(g_est))
 
     
