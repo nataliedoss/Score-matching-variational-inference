@@ -1,6 +1,6 @@
 # Score-matching-variational-inference
 
-This is a Python3 implementation of the algorithm described in Section 1 of <a href="sm_vi.pdf" download>Nonparametric variational inference via score matching</a>. A sample script to test the algorithm is below. For more details on variational inference, see the summary sheet <a href="vi.pdf" download>Variational Inference</a>.
+This is a Python implementation of the algorithm described in <a href="https://github.com/nataliedoss/Thesis/main.pdf" download>Chapter 7: Nonparametric variational inference via score matching</a>. See in particular Section 7.1. A sample script to test the algorithm is below. For more details on variational inference, see the summary sheet <a href="vi.pdf" download>Variational Inference</a>.
 
 ## External dependencies
 
